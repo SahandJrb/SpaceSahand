@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const destinations = {
     moon: {
       name: "Moon",
-      image: "./starter-code/assets/destination/image-moon.png",
+      image: "./assets/destination/image-moon.png",
       description:
         "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective.",
       number: "285 MIL. KM",
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     mars: {
       name: "Mars",
-      image: "./starter-code/assets/destination/image-mars.png",
+      image: "./assets/destination/image-mars.png",
       description:
         "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective.",
       number: "299 MIL. KM",
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     europa: {
       name: "Europa",
-      image: "./starter-code/assets/destination/image-europa.png",
+      image: "./assets/destination/image-europa.png",
       description:
         "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective.",
       number: "355 MIL. KM",
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     titan: {
       name: "Titan",
-      image: "./starter-code/assets/destination/image-titan.png",
+      image: "./assets/destination/image-titan.png",
       description:
         "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective.",
       number: "390 MIL. KM",
@@ -114,22 +114,22 @@ document.addEventListener("DOMContentLoaded", function () {
   function setBackground(page) {
     if (page === "home") {
       document.body.style.backgroundImage =
-        "url('./starter-code/assets/home/background-home-desktop.jpg')";
+        "url('./assets/home/background-home-desktop.jpg')";
     }
 
     if (page === "destination") {
       document.body.style.backgroundImage =
-        "url('./starter-code/assets/destination/background-destination-desktop.jpg')";
+        "url('./assets/destination/background-destination-desktop.jpg')";
     }
 
     if (page === "crew") {
       document.body.style.backgroundImage =
-        "url('./starter-code/assets/crew/background-crew-desktop.jpg')";
+        "url('./assets/crew/background-crew-desktop.jpg')";
     }
 
     if (page === "technology") {
       document.body.style.backgroundImage =
-        "url('./starter-code/assets/technology/background-technology-desktop.jpg')";
+        "url('./assets/technology/background-technology-desktop.jpg')";
     }
   }
 
@@ -151,17 +151,17 @@ const data = [
   {
     title: "LAUNCH VEHICLE",
     desc: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space.",
-    image: "./starter-code/assets/technology/image-launch-vehicle-portrait.jpg",
+    image: "./assets/technology/image-launch-vehicle-portrait.jpg",
   },
   {
     title: "SPACEPORT",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, numquam iste? Modi at officiis obcaecati odit expedita sapiente aperiam est debitis eveniet deserunt sint rem, nesciunt reprehenderit inventore alias vel dolor adipisci assumenda itaque impedit ipsa nostrum fugiat quod. Nisi dolorum aliquam numquam assumenda harum nihil dolore voluptas eligendi similique..",
-    image: "./starter-code/assets/technology/image-spaceport-portrait.jpg",
+    image: "./assets/technology/image-spaceport-portrait.jpg",
   },
   {
     title: "SPACE CAPSULE",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, numquam iste? Modi at officiis obcaecati odit expedita sapiente aperiam est debitis eveniet deserunt sint rem",
-    image: "./starter-code/assets/technology/image-space-capsule-portrait.jpg",
+    image: "./assets/technology/image-space-capsule-portrait.jpg",
   },
 ];
 
