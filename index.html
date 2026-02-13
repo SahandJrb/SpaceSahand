@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Public META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- /Public META -->
+
+    <!-- Title -->
+    <title> Space Tourism </title>
+    <link rel="shortcut icon" href="./starter-code/assets/shared/logo.svg" />
+    <!-- /Title -->
+
+    <!-- SEO META -->
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta property="og:title" content=" Space Tourism " />
+    <meta property="og:description" content=" Space Tourism " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta content="logo" property="og:image">
+    <meta content="" property="og:image:secure_url">
+    <meta property="og:image:type" content="" />
+    <meta property="og:image:width" content="" />
+    <meta property="og:image:height" content="" />
+    <meta content="#da2222" name="theme-color">
+    <!-- /SEO META -->
+
+    <!-- Bootstrap Core Css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Hamburgers Css -->
+    <link rel="stylesheet" type="text/css" href="css/humburgers.css">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+
+    <!-- Template Css -->
+    <link rel="stylesheet" href="css/template.css">
+
+    <!-- Mobile CSS -->
+    <link rel="stylesheet" media="only screen and (max-width: 640px)" href="css/mobile.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="row">
+
+                <section class="head-top">
+
+                    <div class="left">
+                        <div class="logo">
+                            <img src="./starter-code/assets/shared/logo.svg" alt="">
+                        </div>
+                        <hr class="white-line">
+                    </div>
+
+                    <div class="right">
+                        <div class="menu-main">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="nav-link active" href="#" data-page="home">00 Home</a>
+                                        <a class="nav-link" href="#" data-page="destination">01 Destination</a>
+                                        <a class="nav-link" href="#" data-page="crew">02 crew</a>
+                                        <a class="nav-link" href="#" data-page="technology">03 Technology</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+
+        <div class="container">
+
+            <section class="Home page active" id="home">
+
+                <div class="Home-main">
+
+                    <div class="left">
+                        <span>so, you want to travel</span>
+                        <h2>space</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem eum quae cumque
+                            quaerat suscipit impedit vel veniam atque beatae voluptas cum eveniet laudantium ipsum
+                            tempora
+                            doloremque minus eius, aspernatur ratione facere deleniti a ab animi unde! Eos, sequi
+                            doloremque
+                            deleniti libero labore, rem excepturi aliquam ad exercitationem distinctio ullam!</p>
+                    </div>
+
+                    <div class="right">
+
+                        <a href="#" class="btn-explore">
+                            explore
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="Destination page" id="destination">
+
+                <h2 class="page-title"><span>01 </span> pick your destination</h2>
+
+                <div class="row align-items-center">
+
+                    <div class="image col-12 col-lg-6">
+
+                        <img id="planet-image" src="" alt="">
+
+                    </div>
+
+                    <div class="desc col-12 col-lg-6">
+
+                        <ul class="planet-tabs">
+                            <li class="active" data-planet="moon">Moon</li>
+                            <li data-planet="mars">Mars</li>
+                            <li data-planet="europa">Europa</li>
+                            <li data-planet="titan">Titan</li>
+                        </ul>
+
+                        <div class="text">
+
+                            <strong class="title" id="planet-name"></strong>
+                            <span class="sub-title" id="planet-desc"></span>
+
+                        </div>
+                        <hr class="white-line">
+
+                        <div class="sub-text">
+
+                            <div>
+                                <h3>avg. distance</h3>
+                                <span id="planet-number"></span>
+                            </div>
+
+                            <div>
+                                <h4>est. travel time</h4>
+                                <span id="planet-month"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="Crew page" id="crew">
+
+                <h2 class="page-title"><span>02 </span> meet your crew</h2>
+
+                <div class="row align-items-center">
+
+                    <div class="swiper swiper-crew">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <div class="item">
+
+                                    <div class="desc">
+
+                                        <h2>Flight Engineer</h2>
+
+                                        <span>Anousheh Ansary</span>
+
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quaerat
+                                            reprehenderit quibusdam, architecto, sunt molestias cumque dignissimos
+                                            mollitia minus iusto, eveniet ex iure est nulla libero. Expedita velit
+                                            laborum veritatis amet saepe illum dolorum est quibusdam ad. Veritatis
+                                            doloremque laboriosam explicabo voluptas, eveniet autem magnam, quod,
+                                            voluptates eum saepe nesciunt?</p>
+
+                                    </div>
+
+                                    <div class="image">
+
+                                        <img src="starter-code/assets/crew/image-anousheh-ansari.png" alt="">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <div class="item">
+
+                                    <div class="desc">
+
+                                        <h2>Flight Engineer</h2>
+
+                                        <span>Anousheh Ansary</span>
+
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quaerat
+                                            reprehenderit quibusdam, architecto, sunt molestias cumque dignissimos
+                                            mollitia minus iusto, eveniet ex iure est nulla libero. Expedita velit
+                                            laborum veritatis amet saepe illum dolorum est quibusdam ad. Veritatis
+                                            doloremque laboriosam explicabo voluptas, eveniet autem magnam, quod,
+                                            voluptates eum saepe nesciunt?</p>
+
+                                    </div>
+
+                                    <div class="image">
+
+                                        <img src="starter-code/assets/crew/image-douglas-hurley.png" alt="">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <div class="item">
+
+                                    <div class="desc">
+
+                                        <h2>Flight Engineer</h2>
+
+                                        <span>Anousheh Ansary</span>
+
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quaerat
+                                            reprehenderit quibusdam, architecto, sunt molestias cumque dignissimos
+                                            mollitia minus iusto, eveniet ex iure est nulla libero. Expedita velit
+                                            laborum veritatis amet saepe illum dolorum est quibusdam ad. Veritatis
+                                            doloremque laboriosam explicabo voluptas, eveniet autem magnam, quod,
+                                            voluptates eum saepe nesciunt?</p>
+
+                                    </div>
+
+                                    <div class="image">
+
+                                        <img src="starter-code/assets/crew/image-mark-shuttleworth.png" alt="">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <div class="item">
+
+                                    <div class="desc">
+
+                                        <h2>Flight Engineer</h2>
+
+                                        <span>Anousheh Ansary</span>
+
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quaerat
+                                            reprehenderit quibusdam, architecto, sunt molestias cumque dignissimos
+                                            mollitia minus iusto, eveniet ex iure est nulla libero. Expedita velit
+                                            laborum veritatis amet saepe illum dolorum est quibusdam ad. Veritatis
+                                            doloremque laboriosam explicabo voluptas, eveniet autem magnam, quod,
+                                            voluptates eum saepe nesciunt?</p>
+
+                                    </div>
+
+                                    <div class="image">
+
+                                        <img src="starter-code/assets/crew/image-victor-glover.png" alt="">
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-pagination crew"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- <section class="Technology page" id="technology">
+
+                <h2 class="page-title"><span>03 </span>space lunch 101</h2>
+
+                <div class="row">
+
+                    <div class="btns col-12 col-lg-1">
+
+                        <a href="#" class="btn"> 1 </a>
+                        <a href="#" class="btn"> 2 </a>
+                        <a href="#" class="btn"> 3 </a>
+
+                    </div>
+
+                    <div class="item active" data-tech="0">
+
+                        <div class="row">
+
+                            <div class="content col-12 col-lg-7">
+
+                                 <a href="#" class="btn"> 1 </a> 
+
+                                <div class="desc">
+
+                                    <span>The terminalogy</span>
+
+                                    <h2>Lorem ipsum</h2>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab natus animi eaque
+                                        temporibus, fugiat architecto. Accusamus molestiae odit ratione facere sint eius
+                                        dolorem iste debitis consectetur aut necessitatibus ex dolores aliquid quae
+                                        adipisci
+                                        quis cumque, doloremque libero omnis magnam nobis officiis tempore et dolor.
+                                        Repellat maxime ex dignissimos ipsa quam?</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="image col-12 col-lg-5">
+
+                                <div>
+
+                                    <img src="./starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
+                                        alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="item" data-tech="1">
+
+                        <div class="row">
+
+                            <div class="content col-12 col-lg-7">
+
+                                 <a href="#" class="btn"> 2 </a> 
+
+                                <div class="desc">
+
+                                    <span>The terminalogy</span>
+
+                                    <h2>Lorem ipsum</h2>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex nulla a, non
+                                        laudantium eligendi unde modi nesciunt porro ipsam fugit aut, placeat corporis
+                                        harum
+                                        ducimus maxime perferendis minus magni.</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="image col-12 col-lg-5">
+
+                                <div>
+
+                                    <img src="./starter-code/assets/technology/image-space-capsule-portrait.jpg" alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="item" data-tech="2">
+
+                        <div class="row">
+
+                            <div class="content col-12 col-lg-7">
+
+                                 <a href="#" class="btn"> 3 </a> 
+
+                                <div class="desc">
+
+                                    <span>The terminalogy</span>
+
+                                    <h2>Lorem ipsum</h2>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex nulla a, non
+                                        laudantium eligendi unde modi nesciunt porro ipsam fugit aut, placeat corporis
+                                        harum
+                                        ducimus maxime perferendis minus magni.</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="image col-12 col-lg-5">
+
+                                <div>
+
+                                    <img src="./starter-code/assets/technology/image-spaceport-portrait.jpg" alt="">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section> -->
+
+            <section class="Technology page" id="technology">
+
+                <h2 class="page-title">
+                    <span>03</span> SPACE LAUNCH 101
+                </h2>
+
+                <div class="row align-items-center">
+
+                    <!-- Buttons -->
+                    <div class="col-12 col-lg-1">
+                        <div class="tech-buttons">
+                            <a href="#" class="btn active" data-tech="0">1</a>
+                            <a href="#" class="btn" data-tech="1">2</a>
+                            <a href="#" class="btn" data-tech="2">3</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="tech-item active" data-tech="0">
+                            <div class="list">
+                                <span class="label">THE TERMINOLOGY</span>
+                                <h2 id="tech-title">LAUNCH VEHICLE</h2>
+                                <p id="tech-desc">
+                                    A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                                    used to carry a payload from Earth's surface to space.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tech-item" data-tech="1">
+                            <div class="list">
+                                <span class="label">THE TERMINOLOGY</span>
+                                <h2 id="tech-title">SPACEPORT</h2>
+                                <p id="tech-desc">
+                                    A spaceport or cosmodrome is a site for launching spacecraft.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tech-item" data-tech="2">
+                            <div class="list">
+                                <span class="label">THE TERMINOLOGY</span>
+                                <h2 id="tech-title">SPACE CAPSULE</h2>
+                                <p id="tech-desc">
+                                    A space capsule is an often-crewed spacecraft.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="tech-image active" data-tech="0">
+                            <div>
+                                <img id="tech-image"
+                                    src="./starter-code/assets/technology/image-launch-vehicle-portrait.jpg">
+                            </div>
+                        </div>
+
+                        <div class="tech-image" data-tech="1">
+                            <div>
+                                <img id="tech-image"
+                                    src="./starter-code/assets/technology/image-spaceport-portrait.jpg">
+                            </div>
+                        </div>
+
+                        <div class="tech-image" data-tech="2">
+                            <div>
+                                <img id="tech-image"
+                                    src="./starter-code/assets/technology/image-space-capsule-portrait.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Jquery Main -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/site.js"></script>
+
+</body>
+
+</html>

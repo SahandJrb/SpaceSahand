@@ -1,0 +1,629 @@
+body {
+  background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1520px;
+}
+
+/*------------- Header --------------------*/
+
+.header {
+  position: relative;
+  margin-top: 60px;
+}
+
+.header .head-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header .head-top .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .head-top .left .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header .head-top .left .logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .head-top .left .white-line {
+  width: 500px;
+  height: 1px;
+  border: none;
+  border-radius: 2px;
+  background-color: gray;
+  margin-left: 70px;
+  z-index: 2;
+}
+
+.header .head-top .right .menu-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130%;
+  background-color: rgba(11, 13, 23, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 13, 23, 0.95) 0%,
+    rgba(22, 25, 50, 0.9) 100%
+  );
+  height: 120px;
+  position: relative;
+  right: 5%;
+  padding-right: 75px;
+}
+
+.header .head-top .right .navbar {
+  padding: 0;
+}
+
+.header .head-top .right .navbar .collapse {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .head-top .right .navbar .collapse .navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 70px 100px 70px 100px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.header .head-top .right .navbar .collapse .navbar-nav .nav-link {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.header .head-top .right .navbar .collapse .navbar-nav .nav-link:hover {
+  color: white;
+  filter: drop-shadow(0px 0 25px white);
+}
+
+.header .head-top .right .navbar .collapse .navbar-nav .nav-link::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 80px;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.header .head-top .right .navbar .collapse .navbar-nav .nav-link:hover::before {
+  opacity: 1;
+  width: 100%;
+}
+
+.header .head-top .right .navbar .collapse .navbar-nav .nav-link:hover::before,
+.header
+  .head-top
+  .right
+  .navbar
+  .collapse
+  .navbar-nav
+  .nav-link.active::before {
+  opacity: 1;
+  width: 100%;
+}
+
+/*------------- /Header --------------------*/
+
+/*------------- main --------------------*/
+
+/*------------- home --------------------*/
+
+.main {
+  position: relative;
+}
+
+.main .Home {
+  margin-top: 240px;
+  padding: 0 100px 0 100px;
+}
+
+.main .Home .Home-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.main .Home .Home-main .left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main .Home .Home-main .left > span {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.main .Home .Home-main .left > h2 {
+  color: white;
+  font-size: 150px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.main .Home .Home-main .left > p {
+  color: white;
+  width: 515px;
+  font-size: 24px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.main .Home .Home-main .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .Home .Home-main .right > a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 350px;
+  height: 350px;
+  border-radius: 500%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 48px;
+  transition: all 0.3s;
+}
+
+.main .Home .Home-main .right > a:hover {
+  color: white;
+  background-color: black;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/*------------- /main --------------------*/
+
+/*------------- Destination --------------------*/
+
+.main .Destination {
+  color: white;
+  margin-top: 70px;
+  padding: 0 100px 0 100px;
+}
+
+.main .Destination .desc {
+  padding-left: 150px;
+  margin-top: -30px;
+}
+
+.main .Destination .desc .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main .Destination .desc .text .title {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.main .Destination .desc .text .sub-title {
+  opacity: 0.6;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.main .Destination .desc .white-line {
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  margin-top: 70px;
+  opacity: 0.4;
+  margin-bottom: 40px;
+}
+
+.main .Destination .desc .sub-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+}
+
+.main .Destination .desc .sub-text > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main .Destination .desc .sub-text > div > h3,
+.main .Destination .desc .sub-text > div > h4 {
+  margin: 0;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.main .Destination .desc .sub-text > div > span {
+  font-size: 34px;
+  color: white;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.main .Destination .desc .planet-tabs {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.main .Destination .desc .planet-tabs li {
+  cursor: pointer;
+  opacity: 0.5;
+  position: relative;
+  font-size: 24px;
+}
+
+.main .Destination .desc .planet-tabs li.active {
+  opacity: 1;
+}
+
+.main .Destination .desc .planet-tabs li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+}
+
+.main .Destination .image {
+  margin-top: 100px;
+  padding-left: 100px;
+}
+
+.main .Destination .image img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.main .Destination .page-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+
+.main .Destination .page-title > span {
+  color: white;
+  opacity: 0.5;
+  font-weight: 601;
+  margin-right: 20px;
+}
+
+/*------------- /Destination --------------------*/
+
+/*------------- Crew --------------------*/
+
+.main .Crew {
+  color: white;
+  margin-top: 70px;
+  padding: 0 100px 0 100px;
+}
+
+.main .Crew .page-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+
+.main .Crew .page-title > span {
+  color: white;
+  opacity: 0.5;
+  font-weight: 601;
+  margin-right: 20px;
+}
+
+.main .Crew .row {
+  margin-top: 40px;
+}
+
+.main .Crew .row .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .Crew .row .item .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main .Crew .row .item .desc > h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 38px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.main .Crew .row .item .desc > span {
+  color: white;
+  font-size: 62px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.main .Crew .row .item .desc > p {
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  opacity: 0.6;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 100px;
+  left: 0;
+  position: absolute;
+  display: flex;
+  gap: 15px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+  color: white;
+  background: white;
+  width: 15px;
+  height: 15px;
+}
+
+/*------------- /Crew --------------------*/
+
+/*------------- Technology --------------------*/
+
+/* .main .Technology {
+  color: white;
+  margin-top: 70px;
+  padding: 0 100px 0 100px;
+}
+
+.main .Technology .page-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0;
+  color: white;
+}
+
+.main .Technology .page-title > span {
+  color: white;
+  opacity: 0.5;
+  font-weight: 601;
+  margin-right: 20px;
+}
+
+.main .Technology .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .Technology .item .content {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.main .Technology .item .content .btn {
+  color: white;
+  width: 480px;
+  height: 100px;
+  border-radius: 500px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 58px;
+  transition: all 0.3s;
+}
+
+.main .Technology .item .content .btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.main .Technology .item .content .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .Technology .item .content .desc > span {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.main .Technology .item .content .desc > h2 {
+  font-size: 52px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.main .Technology .item .content .desc > p {
+  color: white;
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.main .Technology .item .image {
+  position: relative;
+}
+
+.main .Technology .item .image > div {
+  margin-left: 120px;
+} */
+
+.main .Technology {
+  color: white;
+  padding: 80px 120px;
+}
+
+.main .Technology .page-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.main .Technology .page-title > span {
+  opacity: 0.5;
+  color: white;
+  font-weight: 601;
+  margin-right: 20px;
+}
+
+.main .Technology .tech-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main .Technology .tech-buttons .btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.main .Technology .tech-buttons .btn:hover {
+  background: white;
+  color: black;
+}
+
+.main .Technology .tech-buttons .btn.active {
+  background: white;
+  border: 1px solid white;
+  color: black;
+}
+
+.main .Technology .tech-item {
+  display: none;
+}
+
+.main .Technology .tech-item.active {
+  display: block;
+}
+
+.main .Technology .tech-item .list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: -120px;
+}
+
+.main .Technology .tech-item .list .label {
+  font-size: 16px;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.main .Technology .tech-item .list > h2 {
+  font-size: 52px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.main .Technology .tech-item .list > p {
+  max-width: 470px;
+  line-height: 32px;
+  opacity: 0.7;
+}
+
+.main .Technology .tech-image {
+  display: none;
+}
+
+.main .Technology .tech-image.active {
+  display: block;
+}
+
+.main .Technology .tech-image > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
